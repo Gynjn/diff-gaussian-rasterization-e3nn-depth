@@ -60,7 +60,23 @@ rendered_image, radii, depth_map, weight_map = rasterizer(
       month        = {July},
       year         = {2023},
       url          = {https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/}
-}</code></pre>
+}
+@misc{leofrank2024,
+      author       = {Leo Frank (Wynn)},
+      title        = {3D Gaussian Splatting Rasterizer with Depth},
+      year         = {2024},
+      publisher    = {github},
+      url          = {https://github.com/leo-frank/diff-gaussian-rasterization-depth/}
+}
+@misc{charatan2023,
+      author       = {David Charatan},
+      title        = {3D Gaussian Splatting Rasterizer with e3nn package convention},
+      year         = {2023},
+      publisher    = {github},
+      url          = {https://github.com/dcharatan/diff-gaussian-rasterization-modified/}
+}
+
+<!-- </code></pre>
   </div>
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
@@ -74,7 +90,7 @@ rendered_image, radii, depth_map, weight_map = rasterizer(
   </div>
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@misc{leofrank2024,
+    <pre><code>@misc{charatan2023,
       author       = {David Charatan},
       title        = {3D Gaussian Splatting Rasterizer with e3nn package convention},
       year         = {2023},
@@ -82,7 +98,7 @@ rendered_image, radii, depth_map, weight_map = rasterizer(
       url          = {https://github.com/dcharatan/diff-gaussian-rasterization-modified/}
 }</code></pre>
   </div>  
-</section>
+</section> -->
 
 <!-- 
 <section class="section" id="BibTeX">
