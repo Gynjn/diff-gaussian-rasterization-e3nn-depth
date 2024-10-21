@@ -11,8 +11,6 @@ We make two contributions:
 
 Note that our method calculates depth values based on volume rendering, and  corrects the depth by **dividing it by the weights** of volume rendering. You can apply supervision to them, such as depth  monocular estimation. If you do not wish to correct the depth, you can obtain the uncorrected  depth map by multiplying the depth map with the weight map.
 
-**We have verified its correctness on real datasets under sparse view setting (e.g., 3 views), by supervising the optimization with monocular depth.**
-
 
 ## Install
 
@@ -27,7 +25,7 @@ python setup.py install
 ## Usage
 
 ```python
-from diff_gaussian_rasterization_depth_e3nn import GaussianRasterizationSettings, GaussianRasterizer
+from diff_gaussian_rasterization_e3nn_depth import GaussianRasterizationSettings, GaussianRasterizer
 
 ...
 
@@ -64,9 +62,29 @@ rendered_image, radii, depth_map, weight_map = rasterizer(
       url          = {https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/}
 }</code></pre>
   </div>
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{leofrank2024,
+      author       = {Leo Frank (Wynn)},
+      title        = {3D Gaussian Splatting Rasterizer with Depth},
+      year         = {2024},
+      publisher    = {github},
+      url          = {https://github.com/leo-frank/diff-gaussian-rasterization-depth/}
+}</code></pre>
+  </div>
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{leofrank2024,
+      author       = {David Charatan},
+      title        = {3D Gaussian Splatting Rasterizer with e3nn package convention},
+      year         = {2023},
+      publisher    = {github},
+      url          = {https://github.com/dcharatan/diff-gaussian-rasterization-modified/}
+}</code></pre>
+  </div>  
 </section>
 
-
+<!-- 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
@@ -92,4 +110,4 @@ rendered_image, radii, depth_map, weight_map = rasterizer(
       url          = {https://github.com/dcharatan/diff-gaussian-rasterization-modified/}
 }</code></pre>
   </div>
-</section>
+</section> -->
