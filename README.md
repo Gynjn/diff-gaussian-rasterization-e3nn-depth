@@ -11,14 +11,13 @@ We make two contributions:
 
 Note that our method calculates depth values based on volume rendering, and  corrects the depth by **dividing it by the weights** of volume rendering. You can apply supervision to them, such as depth  monocular estimation. If you do not wish to correct the depth, you can obtain the uncorrected  depth map by multiplying the depth map with the weight map.
 
+Note that our method calculates spherical harmonics in e3nn convention. Original 3D-GS's axis XYZ goes to ZYX. You can also refer the [issue](https://github.com/graphdeco-inria/gaussian-splatting/issues/176) for more details.
 
 ## Install
 
-<!-- ```shell
-git clone git@github.com:leo-frank/diff-gaussian-rasterization-depth.git
-cd diff-gaussian-rasterization-depth
-python setup.py install
-``` -->
+```shell
+pip install git+https://github.com/Gynjn/diff-gaussian-rasterization-e3nn-depth
+```
 
 
 
@@ -70,13 +69,15 @@ rendered_image, radii, depth_map, weight_map = rasterizer(
 }
 @misc{charatan2023,
       author       = {David Charatan},
-      title        = {3D Gaussian Splatting Rasterizer with e3nn package convention},
+      title        = {3D Gaussian Splatting Rasterizer with e3nn convention},
       year         = {2023},
       publisher    = {github},
       url          = {https://github.com/dcharatan/diff-gaussian-rasterization-modified/}
 }</code></pre>
   </div>
 </section>
+
+Thanks for open-sourcing the projects.
 
 <!-- </code></pre>
   </div>
