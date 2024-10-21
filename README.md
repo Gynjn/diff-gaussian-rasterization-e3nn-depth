@@ -74,7 +74,9 @@ rendered_image, radii, depth_map, weight_map = rasterizer(
       year         = {2023},
       publisher    = {github},
       url          = {https://github.com/dcharatan/diff-gaussian-rasterization-modified/}
-}
+}</code></pre>
+  </div>
+</section>
 
 <!-- </code></pre>
   </div>
